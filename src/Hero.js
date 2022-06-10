@@ -30,7 +30,7 @@ const Hero = function () {
       <div className='flex flex-col lg:flex-row items-center justify-between py-7'>
         <Fade duration={3000} triggerOnce>
           <div>
-            <p className='  text-red-700 text-[3rem] capitalize font-semibold mb-2'>
+            <p className='  text-red-700 text-[3rem] capitalize font-semibold mb-2 pt-14 lg:pt-0'>
               say hello to Sellcoins!
             </p>
             <h3 className='text-white text-4xl mb-2'>
@@ -64,7 +64,7 @@ const Hero = function () {
         })}
       </div>
 
-      <div className='grid grid-cols-1 gap-y-7 lg:gap-y-0 lg:grid-cols-3 border border-[#ced4da] py-14  rounded-xl overflow-hidden mb-14'>
+      <div className='grid grid-cols-1 gap-y-7 lg:gap-y-0 lg:grid-cols-3 border border-[#ced4da] py-20 lg:py-14  rounded-xl overflow-hidden mb-14'>
         <Slide direction='up'>
           <div className='text-center'>
             <span className='text-5xl'>990k</span>

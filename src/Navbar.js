@@ -11,7 +11,7 @@ const Navbar = function () {
   return (
     <section className='container'>
       <nav className='flex justify-between items-center pt-7'>
-        <div className='font-semibold text-red-200'>
+        <div className='font-semibold'>
           SELL<span className='text-red-700'>C</span>OINS
         </div>
         <ul className='hidden lg:flex lg:gap-x-6 '>

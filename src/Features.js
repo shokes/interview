@@ -34,9 +34,9 @@ const Features = function () {
           {steps.map((item) => {
             return (
               <Slide direction='up' triggerOnce>
-                <div className='flex gap-x-3 mb-2 '>
+                <div className='flex items-center mb-2 '>
                   <div>
-                    <span>{item.number}.</span>
+                    <span className='mr-5'>{item.number}.</span>
                   </div>
                   <div>
                     <h2 className='font-semibold text-lg'> {item.heading} </h2>
