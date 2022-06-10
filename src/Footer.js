@@ -27,9 +27,9 @@ const Footer = function () {
           <li>Cookies Policy</li>
           <li>Terms and Condition</li>
         </ul>
-        <div className='flex items-center mr-5'>
+        <div className='flex items-center   lg:gap-x-3'>
           <span>&copy; Sellcoins 2022</span>
-          <ul className='grid grid-cols-3 items-center gap-x-2'>
+          <ul className='grid grid-cols-3 ml-3 lg:ml-0 items-center gap-x-2'>
             <li>
               <FaTwitter />
             </li>
