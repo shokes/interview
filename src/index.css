@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+body {
+  color: #ced4da;
+  background-color: #0f0f0f;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 95%;
+  }
+
+  /* .container {
+    max-width: 65rem;
+    margin: 0 auto;
+  } */
+}
+label.menu {
+  flex-direction: column;
+  width: 25px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.menu span {
+  background: rgb(194 65 12);
+  border-radius: 10px;
+  height: 3px;
+  margin: 5px 0 0 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.menu span:nth-of-type(1) {
+  width: 50%;
+}
+
+.menu span:nth-of-type(2) {
+  width: 100%;
+}
+
+.menu span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.menu input[type='checkbox']:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(3px, 0px);
+}
+
+.menu input[type='checkbox']:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+.menu input[type='checkbox']:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(11.2px, -5px) rotatez(45deg);
+}
